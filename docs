@@ -1,0 +1,43 @@
+// https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript
+
+// array.indexOf(r)
+// The indexOf function is called on the array to check if the value r is present in the array.
+// It returns the index of the first occurrence of r in the array, or -1 if r is not found in the array.
+// array.indexOf(r) === -1
+// This comparison checks whether the result of array.indexOf(r) is equal to -1.
+// If the value r is not found in the array, indexOf will return -1, so this comparison will be true. This means that r is not present in the array.
+// if (array.indexOf(r) === -1) { array.push(r); }
+// If the condition from the previous step is true (i.e., if r is not present in the array), then the code inside the curly braces {} will be executed.
+// Inside the block, the value r is pushed to the end of the array using the push method.
+
+// Arrays are best to use when the elements are numbers. Objects are best to use when the elements' strings (text).
+// Both objects and arrays are considered “special” in JavaScript. Objects represent a special data type that is mutable and can be used to store a collection of data (rather than just a single value). Arrays are a special type of variable that is also mutable and can also be used to store a list of values
+
+// rest=
+// spread=
+// default=
+// The main difference between rest and spread is that the rest operator puts the rest of some specific user-supplied values into a JavaScript array. But the spread syntax expands iterables into individual elements
+
+// function checkExpiry(foodName, expiryDate) {
+// const currentDate = new Date();
+// expiryDate = new Date(expiryDate);
+
+// const timeDifference = expiryDate - currentDate;
+// const daysDifference = Math.floor(timeDifference / (1000 _ 60 _ 60 \* 24));
+
+// if (daysDifference < 0) {
+// return `${foodName} is expired ${Math.abs(daysDifference)} days ago.`;
+// } else {
+// return `You have ${daysDifference} days to use this ${foodName}.`;
+// }
+// }
+
+// // Example usage
+// const food1 = "AB";
+// const expiryDate1 = "2023-08-20"; // Example expiry date (in YYYY-MM-DD format)
+// console.log(checkExpiry(food1, expiryDate1));
+
+// const food2 = "CD";
+// const expiryDate2 = "2023-09-10"; // Example expiry date (in YYYY-MM-DD format)
+// console.log(checkExpiry(food2, expiryDate2));
+// single threading non blocking interpreted asynchronous programming langugae
